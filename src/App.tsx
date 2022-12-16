@@ -1,7 +1,7 @@
-import React from 'react';
-import { AppRoutes } from './routes/AppRoutes';
 import { Provider } from 'react-redux';
+import { AppRoutes } from './routes/AppRoutes';
 import { store } from './store';
+import React from 'react';
 
 function App() {
   return (
