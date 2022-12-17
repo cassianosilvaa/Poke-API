@@ -71,6 +71,17 @@ export const Home: React.FC = () => {
               <ListItem>
                 <ListItemText primary={`Peso: ${pokemonRedux.weight}`} />
               </ListItem>
+              <ListItem>
+                <ListItemText
+                  primary={'Habilidades:'}
+                  secondary={
+                    pokemonRedux.abilities &&
+                    pokemonRedux?.abilities.map((item: any) => {
+                      return <ListItem key={item.ability.url}>{item.ability.name}</ListItem>;
+                    })
+                  }
+                />
+              </ListItem>
             </List>
           </Paper>
         )}
